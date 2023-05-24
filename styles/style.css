@@ -26,6 +26,7 @@
   position: absolute;
   justify-content: flex-start;
   top: 30px;
+  left: 64px;
 }
 
 .header__title {
@@ -45,6 +46,7 @@
   font-size: 18px;
   font-weight: normal;
   bottom: 30px;
+  left: 64px;
   margin: 0;
   z-index: 2;
 }
@@ -127,7 +129,7 @@
   font-size: 60px;
   font-weight: 600;
   margin: 0 auto 20px auto;
-  z-index: 2;
+  z-index: 3;
   position: relative;
 }
 
@@ -139,6 +141,8 @@
   font-size: 24px;
   font-weight: normal;
   margin: auto;
+  z-index: 2;
+  position: relative;
 }
 
 .table {
@@ -155,7 +159,6 @@
 .table__cell {
   width: 250px;
   margin-top: 60px;
-  list-style: none;
   z-index: 1;
 }
 
@@ -177,14 +180,14 @@
   background-color: #f2f2f2;
   min-height: 890px;
   position: relative;
-  background-image: url(/images/feynman.png);
+  background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-size: 867px 637px;
   background-position: left bottom;
   bottom: 0;
-  z-index: -1;
   object-fit: cover;
   padding-top: 100px;
+  box-sizing: border-box;
 }
 
 .feynman__title {
@@ -195,7 +198,6 @@
   line-height: 1.15;
   margin: auto;
   margin-bottom: 70px;
-  z-index: 2;
 }
 
 .feynman__subtitle {
@@ -205,7 +207,6 @@
   padding: 0;
   text-align: center;
   margin: 0 auto 0 auto;
-  z-index: 1;
 }
 
 .feynman__link {
@@ -239,10 +240,11 @@
 
 .table__cell_theme_dark {
   width: 200px;
+  margin-top: 80px;
 }
 
 .kaufman__triangle {
-  background-image: url(/images/kaufman-triangle.svg);
+  background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
@@ -269,7 +271,6 @@
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  margin: 0;
 }
 
 .footer__column_content_copyright {
@@ -291,7 +292,7 @@
   flex-direction: column;
 }
 
-.footer__column_heading {
+.footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -301,11 +302,6 @@
 .footer__column-links {
   margin: 0;
   padding: 0;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
-  text-decoration: none;
   list-style: none;
 }
 
@@ -315,14 +311,11 @@
 }
 
 .footer__column-link {
-  padding: 0;
-  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  color: white;
   text-decoration: none;
-  list-style: none;
+  color: white;
   }
 
 .footer__social-icon {
