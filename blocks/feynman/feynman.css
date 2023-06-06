@@ -7,6 +7,6 @@
   background-size: 867px 637px;
   background-position: left bottom;
   bottom: 0;
-  object-fit: cover;
   box-sizing: border-box;
+  padding-top: 100px;
 }
